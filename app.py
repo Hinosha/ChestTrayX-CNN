@@ -80,9 +80,10 @@ if model is not None:
         
         for i, (label, score) in enumerate(zip(class_names, prediction[0])):
             percentage = score * 100
-            # Create a simple progress bar using streamlit
+            # Ensure score is between 0 and 1 for progress bar
+            normalized_score = max(0.0, min(1.0, float(score)))
             st.write(f"**{label}:** {percentage:.2f}%")
-            st.progress(score)
+            st.progress(normalized_score)
         
         # Disclaimer
         st.write("---")
