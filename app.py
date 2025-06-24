@@ -87,7 +87,7 @@ if model is not None:
         
         # Disclaimer
         st.write("---")
-        st.warning("⚠️ **Disclaimer:** This tool is for educational purposes only and should not be used for actual medical diagnosis. Always consult with healthcare professionals.")
+        # st.warning("⚠️ **Disclaimer:** This tool is for educational purposes only and should not be used for actual medical diagnosis. Always consult with healthcare professionals.")
 
 else:
     st.info("Please ensure your trained model file 'xray_cnn_model.h5' is in the same directory as this app to proceed.")
