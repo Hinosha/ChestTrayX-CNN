@@ -1,11 +1,12 @@
 # Core Dependencies
 streamlit>=1.28.0
-tensorflow>=2.16.0
+tensorflow==2.16.2
 numpy>=1.24.0
 opencv-python-headless>=4.8.0
 Pillow>=10.0.0
 
-
+# Optional: Enhanced Features (uncomment if using the enhanced app version)
+# plotly>=5.17.0
 
 # Alternative lighter versions for deployment (if facing memory issues)
 # tensorflow-cpu>=2.16.0  # Use instead of tensorflow for CPU-only deployment
